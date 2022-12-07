@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.container{
+  margin-top: 10px;
+}
+.row {
+  row-gap: 20px;
+}
+
+p {
+  margin: 0 0 5px;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+.card-wrapper {
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+}
+
+.card-wrapper > .cardbox-img {
+  max-width: 100%;
+}
+
+.card-wrapper .col {
+  padding: 0 15px 0 15px;
+}
+
+.card-wrapper {
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .card-wrapper {
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+  }
+}
