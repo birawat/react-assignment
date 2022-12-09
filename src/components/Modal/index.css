@@ -31,6 +31,7 @@
     bottom: 25%;
     margin: auto;
     width: inherit;
+    height: fit-content;
   }
 
   .modal-header {
@@ -62,9 +63,8 @@
   }
 
   .modal-footer {
-    padding: 10px 16px;
+    padding: 6px 16px;
     text-align: right;
-    background: tranparent;
     border-top: 1px solid #e8e8e8;
     border-radius: 0 0 4px 4px;
   }
@@ -77,4 +77,12 @@
     white-space: nowrap;
     vertical-align: middle;
     border: 1px solid transparent;
+  }
+
+  .txt-align {
+    text-align: end;
+  }
+
+  .btn {
+    margin-right: 6px;
   }

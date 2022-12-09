@@ -66,17 +66,18 @@ export const Modal = ({ keyValue, data, setData, setIsOpen }) => {
                         formModel.map(form => {
                             return (
                             <div class="row mb-3" key={form.key}>
-                                <div className='col-md-3'>*<span>{form.key}</span>:</div>
-                                <div className='col-md-9'><input class="form-control" value={formData[form.key]} onChange={(e) => handleChange(e, form.key)} /></div>
+                                <div className='col-md-3 txt-align'><span class="text-danger">*</span><span class="text-capitalize">{form.key}</span>:</div>
+                                <div className='col-md-9'><input type="text" class="form-control" value={formData[form.key]} onChange={(e) => handleChange(e, form.key)} />
+                                </div>
                             </div>
                         )})
                     }
                 </div>
                 <div className="modal-footer">
-                    <div>
-                        <button  type="button" className="btn" onClick={(e) => setIsOpen(false)} >Cancel</button>
+                    <div className="modal-button">
+                        <button type="button" className="btn btn-outline-secondary" onClick={(e) => setIsOpen(false)} >Cancel</button>
                         <button type="button" className="btn btn-primary" onClick={(e) => onSave()}>Ok</button>   
-                    </div>   
+                    </div>
                 </div>
             </div>
         </div>
